@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакты — Дала</title>
+<meta name="description" content="Свяжитесь с нами, чтобы спланировать маршрут по Казахстану: горы, каньоны и города Шёлкового пути.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a class="wordmark" href="index.html">Дала <small>путешествия по Казахстану</small></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Меню</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="destinations.html">Направления</a></li>
+      <li><a href="routes.html">Маршруты</a></li>
+      <li><a href="culture.html">Культура и практика</a></li>
+      <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero page-hero">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Baiterek%20August.jpg?width=1800" alt="Монумент Байтерек в Астане на закате">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Контакты</p>
+      <h1>Расскажите, куда хотите поехать — поможем собрать маршрут</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Написать нам</p>
+        <h2>Заявка на маршрут</h2>
+        <p class="lede">Опишите даты, число участников и то, что уже точно хотите увидеть — остальное предложим сами.</p>
+
+        <form>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Электронная почта</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="dates">Предполагаемые даты</label>
+              <input id="dates" name="dates" type="text" placeholder="например, 10–17 мая">
+            </div>
+            <div class="field">
+              <label for="people">Количество человек</label>
+              <input id="people" name="people" type="number" min="1" placeholder="2">
+            </div>
+            <div class="field full">
+              <label for="interest">Что интересует больше всего</label>
+              <select id="interest" name="interest">
+                <option>Горы и озёра (Кольсай, Большое Алматинское)</option>
+                <option>Каньоны и степь (Чарын, Алтын-Эмель)</option>
+                <option>Шёлковый путь (Туркестан, Шымкент)</option>
+                <option>Комбинированный маршрут</option>
+                <option>Ещё не решили</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Комментарий</label>
+              <textarea id="message" name="message" placeholder="Например: путешествуем с детьми, хотим минимум перелётов"></textarea>
+            </div>
+          </div>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+
+      <div>
+        <p class="eyebrow">Прямая связь</p>
+        <h2>Другие способы написать</h2>
+        <ul class="contact-info">
+          <li><span class="label">Почта</span>hello@dala-travel.example</li>
+          <li><span class="label">Телефон / WhatsApp</span>+7 700 000 00 00</li>
+          <li><span class="label">Офис</span>Алматы, проспект Достык, 1 — по предварительной записи</li>
+          <li><span class="label">Часы ответа</span>Пн–Сб, 10:00–19:00 (GMT+5)</li>
+        </ul>
+        <p style="margin-top:24px; font-size:0.9rem; color:var(--ink-soft);">Это демонстрационная страница: указанные почта и телефон — примеры оформления, а не реальные контакты агентства.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Дала</h4>
+        <p style="max-width:34ch; color:rgba(255,255,255,0.6);">Независимый гид по путешествиям внутри Казахстана: направления, маршруты и практическая подготовка к поездке.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="destinations.html">Направления</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a href="culture.html">Культура и практика</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Источники фото</h4>
+        <ul>
+          <li><a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Дала. Учебный проект, не коммерческое агентство.</span>
+      <span>Фотографии — Wikimedia Commons, лицензии CC</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
